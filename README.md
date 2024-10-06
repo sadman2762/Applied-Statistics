@@ -89,5 +89,69 @@ Answer:(penalty regime: 0 %)
     d2 = randi(6,1,N);
     p  = sum(d1 == d2) / N;
     end
+### 13.Two soldiers shoot on a target in turn until the first hit. The probability that the starter hits it is 0.4, while the second hits it with probability 0.35. What is the probability that the first successful shot belongs to the soldier who started the shooting?
+    (0.4)*(1/(1-(0.6)*(0.65))
 
-      
+### 14.The ten digits are written on ten separate cards. A card is chosen randomly, the digit on is noted and the card is replaced. How many cards should be chosen to have at least one number greater than 7 among them with probability greater than 0.75?
+    
+     log(1-0.75)/log(1-0.2)
+ ### 15.Create a MATLAB function that approximates the probability in the following experiment with simulations!
+
+
+Two dice are rolled. Find the probability that they show different values, given at least one of them shows six.
+
+The number of simulation should be N = 10^3. The variable p should store the approximation, i.e. the relative frequency.
+
+Use semicolons when defining variables!
+
+With the Check button the code is free to run.
+
+
+
+
+
+For example:
+
+Test	Result
+rand('seed',20);
+disp(sim());
+0.900929
+Answer:(penalty regime: 0 %)
+
+    function p = sim()
+    N  = 10^3;
+    d1=randi(6,2,N);
+    f6=sum(d1(1,:)==6 | d1(2,:)==6);
+    fd6=sum((d1(1,:)==6 | d1(2,:)==6) & (d1(1,:) ~= d1(2,:)));
+    p =  fd6/f6   ;
+    end
+### 16.Create a MATLAB function that approximates the probability in the following experiment with simulations!
+
+Three dice are rolled. Find the probability that the sum of the numbers obtained is 8 given the sum is even.
+
+The number of simulation should be N = 10^3. The variable p should store the approximation, i.e. the relative frequency.
+
+Use semicolons when defining variables!
+
+With the Check button the code is free to run.
+
+
+
+
+
+For example:
+
+Test	Result
+rand('seed',301);
+disp(sim());
+0.2
+Answer:(penalty regime: 0 %)
+
+    function p = sim()
+    N  = 10^3;
+    d1=randi(6,3,N);
+    d1=sum(d1);
+    d2=sum(d1 == 8);
+    d3=sum(mod(d1,2)==0);
+    p =d2/d3     ;
+    end
