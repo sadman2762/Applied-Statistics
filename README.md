@@ -155,3 +155,58 @@ Answer:(penalty regime: 0 %)
     d3=sum(mod(d1,2)==0);
     p =d2/d3     ;
     end
+
+
+### 17.Three dice are rolled till the first six appears on one of them. What is the mean number of rolls required, inclusive the last one?
+
+        1/(1-(5/6)^3)
+        1/(1-(5/6)^n) where n is number of dice
+
+### 18.The cost of a lottery coupon (5 from 90) is 300 HUF. In case of two winning numbers hit the lottery pays 1400 HUF, a triple pays 19500 HUF, four winning numbers result 1.05 million HUF while a fiver pays 1500 million HUF. Buying a single coupon what is the average gain?
+
+        (1400*nchoosek(5,2)*nchoosek(85,3))/nchoosek(90,5) + (19500*nchoosek(5,3)*nchoosek(85,2))/nchoosek(90,5) + (1.05*10^6*nchoosek(5,4)*nchoosek(85,1))/nchoosek(90,5) +                 (1500*10^6*nchoosek(5,5)*nchoosek(85,0))/nchoosek(90,5) - 300
+
+### 19.The nominal value of a share is 4 golden galleon. In a year the value either can doubled, or halved or remain the same - each of the events has the same probability. The same happens in the following years, independently of the events of the previous year. Find the distribution of the value of the share after 3 years. What is the mean and the variance of the value?​
+
+Hint:
+If X,Y independent, then E(XY)=EX⋅EY
+
+
+Eξ=
+        
+        4*(3.5)^3/27
+
+D2ξ=
+        
+        4*4*(2*2 + 1*1 + 0.5*0.5)^3/27 - (4*(3.5)^3/27)^2
+
+
+### 20.Create a MATLAB function that approximates the expected value in the following experiment with simulations!
+
+Three dice are rolled till the first one appears on one of them. What is the mean number of rolls required, inclusive the last one?​
+
+The number of simulation should be N = 10^3. The variable m should store the approximation, i.e. the mean.
+
+Use semicolons when defining variables!
+
+With the Check button the code is free to run.
+
+Answer:(penalty regime: 0 %)
+
+        function m = sim()
+    N  = 10^3;
+    s = 0;
+    for i = 1:N
+        while true
+            s = s+1;
+                if rand()<1/6 || rand()<1/6 || rand()<1/6
+                    break;
+                end
+            end
+        end
+    
+
+    m = s/N    ;
+    end
+
+        
