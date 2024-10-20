@@ -208,5 +208,32 @@ Answer:(penalty regime: 0 %)
 
     m = s/N    ;
     end
+### 21.GitHub Flavored Markdown (GFM) doesn't support LaTeX for math rendering directly. However, you can present the equations using plain text formatting to make them readable in GFM. Here’s how you can format the question and solution in GFM-compatible Markdown:
 
-        
+### Question
+A stick of length 12 meters is randomly broken into two parts. Find the cumulative distribution function (CDF) and the probability density function (PDF) of the length of the shorter part.
+
+### Cumulative Distribution Function (CDF)
+#### Cumulative distribution function: F(x):
+      0 if x<0;
+      x/6 if x<6;
+      1 if x>6;
+#### Probability density function.: f(x)
+    1/6 if 0<x<6;
+    0 otherwise
+### 22.Find the CDF of the distance of two randomly chosen points of the [0,2] interval.
+#### Cumulative distribution function: F(x):
+      0 if x<0;
+      1-(1-x/2)^2 if 0<x<2;
+      1 if x>2;
+### 23.The PDF of a random variable ξ is
+#### Probability density function.: f(x)
+    0 if x < 3;
+    A/(5+x)^2 if x>= 3
+#### What is the value of A?    
+    5+3 = 8
+#### What is the value of P(3<ξ<13)?
+    1 - (5+3)/(5+13)
+#### Cumulative distribution function: F(x):
+    0 if x < 3;
+    1 - 8/(5+x) if x>=3;
