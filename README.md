@@ -20,6 +20,7 @@
 
 ### 7.Two dice are rolled. Find the probability that the sum of the numbers obtained is 6 given the sum is even.
     5/18
+    (given sum - 1)/18 [general formulae]
 ### 8.We know that at least one of the seven kids in a family is a girl. Find the probability of having also a boy in the family.
     1-(1/2)^7
     1-(1/2)^(number of kids)
