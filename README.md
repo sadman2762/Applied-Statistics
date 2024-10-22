@@ -235,3 +235,17 @@ Answer:(penalty regime: 0 %)
 #### Cumulative distribution function: F(x):
     0 if x < 3;
     1 - 8/(5+x) if x>=3;
+### 24.Let denote \(X\) the waiting time at a bus stop. The waiting time at a bus stop is uniformly distributed between 1 and 12 minutes. That is \(X ~ U(1,12)\).
+
+### a) The pdf of \(X\) is:
+    1/(12-1)
+    1/(b-a) general formulae
+
+### b) The probability that the rider waits 8 minutes or less is
+    (8-1)/(12-1)
+### c) The expected waiting time is \(E(X)\)
+    (1+12)/2
+    (a + b )/2
+### d) The variance of the waiting time is \(D^2(X)\)
+    (12-1)^2/12
+    (b-a)^2/12
