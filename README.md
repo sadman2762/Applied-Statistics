@@ -22,8 +22,8 @@
     5/18
     (given sum - 1)/18 [general formulae]
 ### 8.We know that at least one of the seven kids in a family is a girl. Find the probability of having also a boy in the family.
-    1-(1/2)^7
-    1-(1/2)^(number of kids)
+    (2^7 - 2)/(2^7 - 1)
+    (2^n - 2)/(2^n - 1) where n is the number of kids
 ### 9.In a TV quiz show the player must choose one from four envelopes. In the first envelope there are 4 cards saying 'Sorry, next time', 8 cards with 'You have won 100 euros' and 5 cards with 'You have won 500 euros'. The content of the second envelope: 9 cards 'Sorry, next time', 6 cards 'You have won 100 euros' and 2 card 'You have won 500 euros'. The third and fourth envelope contain only 'Sorry, next time' cards. The player chooses randomly an envelope and from the chosen envelope he chooses a card. What is the probability that the player wins 500 euros?
     (5/17)*(1/4) + (2/17)*(1/4)
     total probability theorem.
