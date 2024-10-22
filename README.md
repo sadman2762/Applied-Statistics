@@ -1,4 +1,4 @@
-# Applied-Statistics
+# Applied-Statistics(Homework Solution)
 
 ## Important questions list for Midterm
 ### 1.In an urn there are 18 red and 16 white balls. We choose 7 balls without replacement. What is the probability, that all chosen balls are red?
